@@ -30,7 +30,7 @@ public class NaiveBoids : MonoBehaviour
         boids = new Boid[initialSpawnAmount];
         for (int i = 0; i < initialSpawnAmount; i++)
         {
-            int flockID = Mathf.FloorToInt((float)i / (float)initialSpawnAmount * (initialFlockAmount-1));
+            int flockID = Mathf.FloorToInt((float)i / (float)initialSpawnAmount * (initialFlockAmount));
             Debug.Log(flockID);
             boids[i] = new Boid(flockID);
         }
